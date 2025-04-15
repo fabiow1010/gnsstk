@@ -1,0 +1,13 @@
+version: '3'
+services:
+  gnsstk:
+    build: .
+    ports:
+      - "8888:8888"  # Exponer el puerto 8888 para JupyterLab
+    volumes:
+      - ./notebooks:/notebooks  # Volumen compartido para los notebooks
+    environment:
+      - JUPYTER_TOKEN=''  # Deshabilitar el token de seguridad (opcional para simplificar acceso)
+    working_dir: /notebooks
+    stdin_open: true
+    tty: true
