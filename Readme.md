@@ -1,6 +1,6 @@
 # 🛸️ GNSSTk Dev Container
 
-Este proyecto proporciona un entorno Docker listo para usar que incluye [GNSSTk (GPS Toolkit)](https://github.com/SGL-UT/gnsstk) compilado sin bindings de Python, accesible tanto desde Jupyter Notebook como desde editores como Visual Studio Code.
+Este proyecto proporciona un entorno Docker listo para usar que incluye [GNSSTk (GPS Toolkit)](https://github.com/SGL-UT/gnsstk) compilado sin bindings de Python, accesible  como desde editores como Visual Studio Code.
 
 ---
 
