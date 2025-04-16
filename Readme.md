@@ -40,6 +40,12 @@ Esto:
 ### 3. Usar Visual Studio Code con el contenedor
 
 1. Abre la carpeta del proyecto en VS Code
+Desde la terminar con
+```
+cd gnss
+code .
+```
+Ya en dentro de VsCode
 2. Presiona `F1` → **Dev Containers: Reopen in Container**
 3. Asegúrate de que las extensiones de C++ y CMake estén instaladas (ya vienen en `.devcontainer.json`)
 
