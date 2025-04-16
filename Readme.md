@@ -1,6 +1,6 @@
 # 🛸️ GNSSTk Dev Container
 
-Este proyecto proporciona un entorno Docker listo para usar que incluye [GNSSTk (GPS Toolkit)](https://github.com/SGL-UT/gnsstk) compilado sin bindings de Python, accesible  como desde editores como Visual Studio Code.
+Este proyecto proporciona un entorno Docker listo para usar que incluye las librerias de [GNSSTk (GPS Toolkit)](https://github.com/SGL-UT/gnsstk), compilado, accesible desde editores como Visual Studio Code.
 
 ---
 
@@ -9,7 +9,8 @@ Este proyecto proporciona un entorno Docker listo para usar que incluye [GNSSTk 
 Antes de empezar, asegúrate de tener instalado:
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop) para Windows
-- [Git](https://github.com/fabiow1010/gnsstk.git) para clonar el repositorio (opcional si lo descargas como ZIP)
+- (Opcional)[Git](https://git-scm.com/downloads) para poder realizar los comandos para clonar repositorio (opcional si lo descargas como ZIP)
+- [GitHub](https://github.com/fabiow1010/gnsstk.git) para clonar el repositorio (opcional si lo descargas como ZIP)
 - (Opcional) [Visual Studio Code](https://code.visualstudio.com/) con la extensión **Dev Containers**
 
 ---
@@ -20,15 +21,14 @@ Antes de empezar, asegúrate de tener instalado:
 
 ```bash
 git clone https://github.com/fabiow1010/gnsstk.git
-cd tu_repositorio
+mkdir gnss
+cd gnss
 ```
-
-> Reemplaza con tu nombre de usuario y repositorio reales.
 
 ---
 
 ### 2. Construir y ejecutar el contenedor
-
+Una vez en la carpeta gnss ejecuta:
 ```bash
 docker compose up --build
 ```
@@ -87,8 +87,6 @@ Para compilarlo:
 
 - El contenedor está configurado para conservar tus archivos (gracias al volumen `./workdir`)
 - Puedes personalizar la configuración agregando más extensiones o cambiando el `Dockerfile`
-- El entorno de Jupyter no tiene token para facilitar el acceso local (puedes cambiarlo en `docker-compose.yml` si lo deseas)
-
 ---
 
 ## 📌 Créditos
